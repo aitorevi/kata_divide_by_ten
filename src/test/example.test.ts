@@ -14,10 +14,15 @@ Utilizar recursividad
  */
 
 function divideByTen(number: number) {
-    if (number === 1){
-        return 1
+    function isZero(number: number) {
+        return Math.trunc(number) === 0
     }
-    return 0;
+    number = Math.abs(number)
+    if (!isZero(number)) {
+        const resultDivision = number / 10
+        return divideByTen(resultDivision) + 1
+    }
+    return 0
 }
 
 describe("Divisions to zero", () => {
