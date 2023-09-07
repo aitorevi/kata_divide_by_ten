@@ -13,7 +13,9 @@ const a = -0,2 // const b = Math.abs(Math.trunc(a))
 Utilizar recursividad
  */
 
-import {saidHello} from "../core/example";
+function divideByTen(number: number) {
+    return 0;
+}
 
 describe("Divisions to zero", () => {
     it("zero value", () => {
