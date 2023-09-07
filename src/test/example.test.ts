@@ -21,4 +21,8 @@ describe("Divisions to zero", () => {
     it("zero value", () => {
         expect(divideByTen(0)).toBe(0)
     })
+
+    it("one value divides once", () => {
+        expect(divideByTen(1)).toBe(1)
+    })
 })
