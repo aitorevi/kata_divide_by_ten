@@ -25,7 +25,11 @@ describe("Divisions to zero", () => {
         expect(divideByTen(0)).toBe(0)
     })
 
-    it("one value divides once", () => {
+    it("divide one-digit numbers", () => {
         expect(divideByTen(1)).toBe(1)
+    })
+
+    it("divide two-digit numbers", () => {
+        expect(divideByTen(10)).toBe(2)
     })
 })
