@@ -37,4 +37,8 @@ describe("Divisions to zero", () => {
     it("divide two-digit numbers", () => {
         expect(divideByTen(10)).toBe(2)
     })
+
+    it("divide two-digit numbers negative", () => {
+        expect(divideByTen(-20)).toBe(2)
+    })
 })
