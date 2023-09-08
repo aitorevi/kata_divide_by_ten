@@ -8,7 +8,6 @@ el número de divisiones necesarias para llegar a ese dato.
 (-20) -> 2  " -0,2 si le quito la parte entera con Math.abs, que queda? 0? "
 const a = -0,2 // const b = Math.abs(Math.trunc(a))
 (24) -> 2
-("") -> Exception
 
 Utilizar recursividad
  */
@@ -42,7 +41,7 @@ describe("Divisions to zero", () => {
         expect(divideByTen(-20)).toBe(2)
     })
 
-    it("divide three-digit numbers negative", () => {
+    it("divide three-digit numbers", () => {
         expect(divideByTen(204)).toBe(3)
     })
 })
