@@ -12,7 +12,7 @@ const a = -0,2 // const b = Math.abs(Math.trunc(a))
 Utilizar recursividad
  */
 
-import {divideByTen} from "./divideByTen";
+import {divideByTen} from "../core/divideByTen";
 
 describe("Divisions to zero", () => {
     it("zero value", () => {
